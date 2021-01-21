@@ -10,12 +10,17 @@ height  = 10
 height = 8
 
 // Define a new variable width with a value of 12:
+var width = 12
+
+
 
 // Assign a new value to width:
+width = 9
 
 
 // Define a new variable area. Set the value to
 // height * width
+var area = height * width
 
 
 // Important! operators like * must see two
@@ -24,6 +29,8 @@ height = 8
 
 // Define a new variable: perSqFt and set the value
 // to 5.99.
+var perSqFt = 5.99
+
 
 
 // Check the type it should be Double. Int is a
@@ -32,6 +39,9 @@ height = 8
 // area * perSqFt would throw an error:
 // Binary operator '*' cannot be applied to operands of type 'Int' and 'Double'
 // You can convert area to a Double with `Double(area)`
+var areaPer = Double(area) * perSqFt
+
+print(areaPer)
 
 
 
@@ -49,8 +59,11 @@ let pi = 3.14
 // pi = 6.28
 
 
+
 // Define a variable for your name and shoesize below.
 // Since this is unlikely to change use `let`:
+let meShoez = "Gideon " + String(10.5)
+print(meShoez)
 
 
 // Challenge:
@@ -61,8 +74,16 @@ let pi = 3.14
 
 // Storing information about the number of cars parked in
 // a parking lot daily.
+var carsParked = 24
+
+
 // Storing the number of units in an apartment complex.
+let bldgUnits = 18
+
 // Storing your highscore in a game.
+
+var 
+
 // Storing the number of letters in an alphabet.
 
 
