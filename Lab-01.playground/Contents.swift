@@ -12,11 +12,8 @@ height = 8
 // Define a new variable width with a value of 12:
 var width = 12
 
-
-
 // Assign a new value to width:
 width = 9
-
 
 // Define a new variable area. Set the value to
 // height * width
@@ -31,8 +28,6 @@ var area = height * width
 // to 5.99.
 var perSqFt = 5.99
 
-
-
 // Check the type it should be Double. Int is a
 // whole number. Doubles are decimal numbers.
 // This could cause problems. For example:
@@ -44,21 +39,12 @@ var areaPer = Double(area) * perSqFt
 print(areaPer)
 
 
-
-
-
-
-
-
-
 // Some variables are never reassigned they hold
 // the same value always. Define these with `let`
 let pi = 3.14
 
 // Uncomment the line below and test to see an error
 // pi = 6.28
-
-
 
 // Define a variable for your name and shoesize below.
 // Since this is unlikely to change use `let`:
@@ -75,17 +61,19 @@ print(meShoez)
 // Storing information about the number of cars parked in
 // a parking lot daily.
 var carsParked = 24
-
+print("There are " + String( carsParked ) + " cars in the lot today.")
 
 // Storing the number of units in an apartment complex.
 let bldgUnits = 18
 
 // Storing your highscore in a game.
 
-var 
+var highScore = 999
 
 // Storing the number of letters in an alphabet.
 
+let alphabetChars = 26
+print("There are " + String(alphabetChars) + " letters in the English alphabet.")
 
 
 
@@ -109,9 +97,25 @@ var
 // Add a comment to each line with an explanation of
 //   why chose let or var
 
+let Name = "John"
+// Name is 'let' because a person's name usually doesn't change
+print("Hi, my name is "+Name+" .")
 
+let Age = 33
+// Age is 'let' because it's constant
 
+var stepsTaken = 20120
+// stepsTaken uses var because they are likely to take a different number of steps every day
 
+let stepsGoal = 30000
+// stepsGoal uses let because while the steps takew will change, the goal wll likely remaun cnstant
+
+var avgHeartRate = String(120) + " bpm"
+
+print("This is "+Name+". ")
+print(Name+" is "+String(Age)+" years old. ")
+print(Name+"'s current fitness goal is to take "+String(stepsGoal)+" steps every day.")
+print("Today "+Name+" took "+String(stepsTaken)+" steps, and his average heart rate while exercising today is "+String(avgHeartRate)+".")
 
 
 
@@ -126,7 +130,7 @@ var
 // height = 9.77
 
 // Swift assigns a type to each variable and you are not
-// allowed to change the type later. Earlier height was
+// allowed to change the type later. Earlier heieght was
 // typed Int. You can option click it to see the type.
 
 // Go to the top and change the type to look like this:
