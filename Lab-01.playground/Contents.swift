@@ -2,7 +2,7 @@ import UIKit
 
 // Variables associate a name to a value.
 // Use the word `var` to to define a new variable
-var height = 6
+var height: Double = 6
 
 // Later you can reassign to a variable like this:
 height  = 10
@@ -10,7 +10,7 @@ height  = 10
 height = 8
 
 // Define a new variable width with a value of 12:
-var width = 12
+var width: Double = 12
 
 // Assign a new value to width:
 width = 9
@@ -38,6 +38,7 @@ var areaPer = Double(area) * perSqFt
 
 print(areaPer)
 
+print(" ")
 
 // Some variables are never reassigned they hold
 // the same value always. Define these with `let`
@@ -48,8 +49,10 @@ let pi = 3.14
 
 // Define a variable for your name and shoesize below.
 // Since this is unlikely to change use `let`:
-let meShoez = "Gideon " + String(10.5)
+var shoeSize: Double = 10.5
+let meShoez = "Gideon wears size " + String(shoeSize) + " Adidas."
 print(meShoez)
+print(" ")
 
 
 // Challenge:
@@ -62,6 +65,7 @@ print(meShoez)
 // a parking lot daily.
 var carsParked = 24
 print("There are " + String( carsParked ) + " cars in the lot today.")
+print(" ")
 
 // Storing the number of units in an apartment complex.
 let bldgUnits = 18
@@ -74,6 +78,7 @@ var highScore = 999
 
 let alphabetChars = 26
 print("There are " + String(alphabetChars) + " letters in the English alphabet.")
+print(" ")
 
 
 
@@ -111,11 +116,14 @@ let stepsGoal = 30000
 // stepsGoal uses let because while the steps takew will change, the goal wll likely remaun cnstant
 
 var avgHeartRate = String(120) + " bpm"
+print(" ")
 
 print("This is "+Name+". ")
 print(Name+" is "+String(Age)+" years old. ")
+
 print(Name+"'s current fitness goal is to take "+String(stepsGoal)+" steps every day.")
-print("Today "+Name+" took "+String(stepsTaken)+" steps, and his average heart rate while exercising today is "+String(avgHeartRate)+".")
+
+print("Today "+Name+" took "+String(stepsTaken)+" steps, and his average heart rate while exercising today was "+String(avgHeartRate)+".")
 
 
 
@@ -127,7 +135,7 @@ print("Today "+Name+" took "+String(stepsTaken)+" steps, and his average heart r
 
 // Uncomment the line below Notice the error that shows:
 
-// height = 9.77
+ height = 9.77
 
 // Swift assigns a type to each variable and you are not
 // allowed to change the type later. Earlier heieght was
@@ -158,40 +166,62 @@ print("Today "+Name+" took "+String(stepsTaken)+" steps, and his average heart r
 // Binary operator '*' cannot be applied to operands of type 'int' and 'Double'
 // Radius is an int and pi is a double. Fix it by making radius type double.
 
-//let slices = 8
-//let radius = 10
-//let area = radius * radius * pi // error
+let slices = 8
+var radius: Double = 10
+var pieArea = radius * radius * pi // error
 
 // That worked but Slices should be a whole number. What happens now, Error:
 // Binary operator '/' connot be applied to operands of type 'Double' and 'Int'
 // In this case you can cast a value as another type like this: Double(8)
 // Try it here:
 
-//let sliceArea = area / slices
+let sliceArea = pieArea / Double(slices)
+print(" ")
 
-//print(area) // 314.0
-//print(sliceArea) // 39.25
+print(pieArea) // 314.0
+print(sliceArea) // 39.25
 
 
 // Challenges:
 // 1. Your app needs to accept a username and hold it in a variable. What type is
 //   best for this variable?
+print(" ")
+print("--------------------")
+print(" ")
+
+let str: String = "String"
+print("1. " + str)
 
 // 2. Your app needs to accept a password. What type should this be?
+
+let password = str
+print("2. " + password)
+
 
 // 3. Your app needs to accept a variable that holds a user's shoe size. What type
 //   is it?
 
+let shoes: String = "Double"
+print("3. " + shoes)
+
 // 4. Your app has a UIPicker that allows a visitor to choose their gender. The
 //   choices are M, F, O(ther), N(ot specified). What type should these be?
+
+let gender: String = "String"
+print("4. " + gender)
 
 // 5. Your app asks whether an applicant is older than 18. This is a check box or a
 //   switch, what type is best here?
 
+let over18:String = "I have no idea"
+print("5. " + over18)
+
+
 // 6. Your app asks how many people are in your party. (Imagine a reservation form)
 //   What type is this?
 
-
+let attendees: String = "Int"
+print("6. " + attendees)
 
 
 
