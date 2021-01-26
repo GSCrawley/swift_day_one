@@ -113,7 +113,7 @@ var stepsTaken = 20120
 // stepsTaken uses var because they are likely to take a different number of steps every day
 
 let stepsGoal = 30000
-// stepsGoal uses let because while the steps takew will change, the goal wll likely remaun cnstant
+// stepsGoal uses let because while the steps takew will change, the goal wll likely remain constant
 
 var avgHeartRate = String(120) + " bpm"
 print(" ")
@@ -213,8 +213,8 @@ print("4. " + gender)
 // 5. Your app asks whether an applicant is older than 18. This is a check box or a
 //   switch, what type is best here?
 
-let over18:String = "I have no idea"
-print("5. " + over18)
+let over18 = true
+print("5. " + String(over18)+" = Bool")
 
 
 // 6. Your app asks how many people are in your party. (Imagine a reservation form)
